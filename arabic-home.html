@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>توتال للمواد الغذائية</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="https://totalfoods-eg.com/wp-content/uploads/2025/02/cropped-newlogo-1-270x270.png" />
+  <style>
+    /* Additional Arabic-specific overrides */
+    body { font-family: 'Tajawal', sans-serif; direction: rtl; }
+
+    .hero-badge { flex-direction: row-reverse; }
+    .hero-actions { flex-direction: row-reverse; }
+    .hero-content { direction: rtl; }
+    .hero-text { text-align: right; }
+
+    .nav-links { flex-direction: row-reverse; }
+
+    .value-card::before { transform-origin: right; }
+
+    .footer-links a:hover { padding-left: 0; padding-right: 4px; }
+
+    .stat-label { font-family: 'Tajawal', sans-serif; }
+
+    .cta-inner { flex-direction: row-reverse; }
+
+    .contact-block { flex-direction: row-reverse; text-align: right; }
+
+    .footer-grid { direction: rtl; }
+    .footer-bottom { flex-direction: row-reverse; }
+
+    .partner-item { flex-direction: row; }
+
+    .breadcrumb { flex-direction: row-reverse; }
+
+    /* RTL nav toggle background */
+    .navbar.scrolled .nav-toggle span { background: var(--text); }
+
+    .section-desc { text-align: right; }
+    .text-center .section-desc { text-align: center; }
+
+    /* Arabic font sizes */
+    .hero-title { font-size: clamp(2rem, 4.5vw, 3.6rem); }
+    .hero-desc { font-size: 1.05rem; }
+
+    .about-grid, .values-grid { direction: rtl; }
+    .about-card { text-align: right; }
+    .value-card { text-align: right; }
+
+    .finance-card { text-align: center; }
+
+    /* Arrow flip for RTL */
+    .btn-primary, .btn-outline { flex-direction: row-reverse; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="arabic-home.html" class="nav-logo">
+        <img class="nav-logo-img" src="https://totalfoods-eg.com/wp-content/uploads/2025/02/1748531073867.png" alt="توتال للمواد الغذائية" />
+      </a>
+      <ul class="nav-links" id="navLinks" style="flex-direction:row-reverse;">
+        <li><a href="arabic-home.html" class="nav-link active">الرئيسية</a></li>
+        <li><a href="arabic-about.html" class="nav-link">من نحن</a></li>
+        <li><a href="arabic-partners.html" class="nav-link">شركاؤنا</a></li>
+        <li><a href="arabic-jobs.html" class="nav-link">وظائف</a></li>
+        <li><a href="arabic-contact.html" class="nav-link nav-cta">تواصل معنا</a></li>
+        <li><a href="index.html" class="nav-link" style="color:rgba(255,255,255,0.7);font-size:0.8rem;">English</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content" style="direction:rtl;">
+      <div class="hero-text">
+        <div class="hero-badge">تأسست 2022 · من أسرع الشركات نمواً في مصر</div>
+        <h1 class="hero-title">
+          نوصل <span>الجودة</span><br/>إلى بابك<br/>في كل مكان
+        </h1>
+        <p class="hero-desc">
+          توتال فودز شركة ناشئة وسريعة النمو في مجال توزيع المواد الغذائية، تأسست عام 2022 بهدف توزيع منتجات غذائية عالية الجودة بكفاءة وسرعة على عملاء الجملة والتجزئة والعملاء الرئيسيين.
+        </p>
+        <div class="hero-actions" style="justify-content:flex-start;">
+          <a href="arabic-about.html" class="btn-primary">اعرف قصتنا ←</a>
+          <a href="arabic-contact.html" class="btn-outline">تواصل معنا</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-truck-img"
+          src="https://totalfoods-eg.com/wp-content/uploads/2025/07/1753524746373.png"
+          alt="سيارة توزيع توتال فودز" />
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item reveal delay-1">
+        <div class="stat-number">
+          <span class="counter" data-target="130" data-suffix="+">0</span>
+        </div>
+        <div class="stat-label">سيارة توزيع</div>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <div class="stat-number">
+          <span class="counter" data-target="300" data-suffix="+">0</span>
+        </div>
+        <div class="stat-label">موظف</div>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <div class="stat-number">
+          <span class="counter" data-target="15000" data-suffix="+">0</span>
+        </div>
+        <div class="stat-label">عميل</div>
+      </div>
+      <div class="stat-item reveal delay-4">
+        <div class="stat-number">
+          <span class="counter" data-target="3" data-suffix="">0</span>
+        </div>
+        <div class="stat-label">محافظات مُغطّاة</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALUES -->
+  <section class="values-section">
+    <div class="section-inner">
+      <div class="text-center reveal">
+        <span class="section-label">لماذا نختارنا</span>
+        <h2 class="section-title">قيمنا الجوهرية</h2>
+        <p class="section-desc">نبنى على ثلاثة ركائز تُحرّك كل ما نفعله — من اختيار أجود المنتجات إلى إيصالها لبابك في أسرع وقت.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal delay-1">
+          <div class="value-icon">🏆</div>
+          <h3 class="value-title">الجودة أولاً</h3>
+          <p class="value-desc">نلتزم بتقديم أعلى جودة في المنتجات الغذائية، مُختارة بعناية من أفضل الموردين والمنتجين في مصر لضمان رضا عملائنا.</p>
+        </div>
+        <div class="value-card reveal delay-2">
+          <div class="value-icon">💡</div>
+          <h3 class="value-title">الابتكار</h3>
+          <p class="value-desc">نسعى دائماً إلى تقديم حلول جديدة وفعّالة تواكب احتياجات السوق المتطورة وتلبي متطلبات عملائنا.</p>
+        </div>
+        <div class="value-card reveal delay-3">
+          <div class="value-icon">🚚</div>
+          <h3 class="value-title">التوصيل السريع</h3>
+          <p class="value-desc">نمتلك أسطولاً من 130 سيارة ونحو 250 سائقاً ومندوب مبيعات، مع نظام توزيع فعّال يضمن التوصيل السريع في جميع المناطق المُغطّاة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip">
+    <div class="cta-inner" style="flex-direction:row-reverse;">
+      <div class="cta-text reveal-right" style="text-align:right;">
+        <h2>مستعد للشراكة مع توتال فودز؟</h2>
+        <p>استكشف شراكاتنا، فرص العمل، أو تواصل معنا مباشرة.</p>
+      </div>
+      <div class="cta-links reveal-left">
+        <a href="arabic-about.html" class="btn-white">من نحن</a>
+        <a href="arabic-partners.html" class="btn-white">شركاؤنا</a>
+        <a href="arabic-jobs.html" class="btn-gold">انضم لفريقنا</a>
+        <a href="arabic-contact.html" class="btn-gold">تواصل معنا</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid" style="direction:rtl;">
+      <div class="footer-brand">
+        <img src="https://totalfoods-eg.com/wp-content/uploads/2025/02/1748531073867.png" alt="توتال فودز" />
+        <p>شركة ناشئة وسريعة النمو في مجال توزيع المواد الغذائية، تأسست عام 2022، ملتزمة بتوصيل منتجات عالية الجودة في جميع أنحاء مصر.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/share/15TE9nyWqy/" class="social-btn" target="_blank" rel="noopener">f</a>
+          <a href="https://www.instagram.com/total__foods" class="social-btn" target="_blank" rel="noopener">ig</a>
+          <a href="https://www.tiktok.com/@total.foods" class="social-btn" target="_blank" rel="noopener">tt</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-heading">التنقل</p>
+        <ul class="footer-links">
+          <li><a href="arabic-home.html">الرئيسية</a></li>
+          <li><a href="arabic-about.html">من نحن</a></li>
+          <li><a href="arabic-partners.html">شركاؤنا</a></li>
+          <li><a href="arabic-jobs.html">وظائف</a></li>
+          <li><a href="arabic-contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">تواصل معنا</p>
+        <ul class="footer-links">
+          <li><a href="tel:+201211888389">01211888389</a></li>
+          <li><a href="tel:+201201888674">01201888674</a></li>
+          <li><a href="mailto:total.foods@totalfoods-eg.com">total.foods@totalfoods-eg.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">روابط سريعة</p>
+        <ul class="footer-links">
+          <li><a href="arabic-contact.html">المقر الرئيسي</a></li>
+          <li><a href="arabic-partners.html">مورّدونا</a></li>
+          <li><a href="arabic-jobs.html">الوظائف</a></li>
+          <li><a href="index.html">English</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom" style="flex-direction:row-reverse;">
+      <span>جميع الحقوق محفوظة © 2025 توتال فودز</span>
+      <span>تصميم: <a href="http://www.m2m4solutions.com" target="_blank" rel="noopener">M2M Software Studio</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
